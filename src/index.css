@@ -1,7 +1,17 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Philosopher:wght@400;700&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+    background: -moz-linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+    background: linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Philosopher', sans-serif;
 }
 img {
   max-width: 100%;
@@ -9,39 +19,32 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
+
+/*--------------------HEADER-------------------*/
 .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding:  20px;
+
 }
 .nav-link {
-    margin-left: 20px;
-}
- .container {
-   max-width: 1140px;
-     padding: 50px 15px;
-     width: 100%;
-     margin: 0 auto;
- }
-.row{
-display: flex;
-margin:  -15px;
-flex-wrap: wrap;
-
+    border: 1px solid #b0f352;
+    border-radius: 5px;
+    padding: 0.3rem 0.7em;
+    color: #eac405;
 }
 
-.col-3 {
-  width: 25%;
-  padding: 0 15px;
-  text-align: center;
-}
-
-.col-4 {
-    width: 33.3333%;
-    padding: 0 15px;
+.nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.margin {
+    margin-right: 20px;
+
 }
 .box {
   margin-bottom: 30px;
@@ -54,13 +57,111 @@ transition: .4s;
 .box h3 {
   padding: 20px;
 }
-.col-6 {
-    width: 50%;
-    padding: 0 15px;
-}
 .img__details {
  width: 400px;
     margin-top: 100px;
 
 }
+.logo {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    line-height: 63px;
+    color: #F6B76C;
+    border: 1px solid #000000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*------------------HOME---------------*/
+.hero__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: #150C01;
+    padding: 0 70px;
+    margin-top: 109px;
+    text-align-last: justify;
+}
+.home-section {
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+    background: -moz-linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+    background: linear-gradient(45deg, rgb(185, 207, 154), rgb(82, 182, 182));
+}
+.home-box {
+    position: relative;
+}
+.home__svg1 {
+    position: absolute;
+    width: 270px;
+    height: 224px;
+    left: 0;
+    top: 350px;
+    filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+.home__svg2 {
+    position: absolute;
+    width: 370px;
+    height: 432px;
+    left: 100px;
+    top: 70px;
+    filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+.home__svg3 {
+    position: absolute;
+    width: 170px;
+    height: 176px;
+    left: 366px;
+    top: 24px;
+    filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+.home__svg4 {
+    position: absolute;
+    width: 166px;
+    height: 52px;
+    left: 305px;
+    top: 339px;
+}
+.home__svg5 {
+    position: absolute;
+    top: 122px;
+    left: 6px;
+}
+.home__svg6 {
+    position: absolute;
+    top: 60px;
+    left: 6px;
+}
+
+
+
+/*----------------------SEARCH------------------*/
+.search {
+    border: 1px solid #848383;
+    border-radius:   5px 0  0 5px ;
+    padding: 6px 0 6px 12px;
+    margin-left:10px;
+}
+.search-btn {
+    border: 1px solid #b0f352;
+    color: #eac405;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+}
+.search-btn:hover {
+    transition: inherit;
+}
+
+
+/*------------------MealDetails---------------*/
+.mealdeteil {
+    margin-top: 100px;
+}
+.box-mealing {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 60%;
+}
+
+
+
 

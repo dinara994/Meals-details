@@ -1,7 +1,7 @@
 import React, {useEffect, useState,} from "react";
 import axios from "axios";
 import '../../index.css'
-import {Link} from "react-router-dom";
+import MealsList from "../../components/MealsList/MealsList";
 
 const Meals = () => {
     const [meals, setMeals] = useState([])
@@ -13,20 +13,7 @@ const Meals = () => {
 
     return (
         <div>
-            <div className='row'>
-                {
-                    meals.map(item =>
-                        <div className='col-3' key={item.idMeal}>
-                            <Link to={`/meal/${item.idMeal}`}>
-                                <div className='box'>
-                                    <img src={item.strMealThumb} alt=""/>
-                                    <h3>{item.strMeal}</h3>
-                                </div>
-                            </Link>
-                        </div>
-                    )
-                }
-            </div>
+            <MealsList meals={meals}/>
         </div>
     )
 }
