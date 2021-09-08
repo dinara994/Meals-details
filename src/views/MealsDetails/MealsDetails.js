@@ -32,13 +32,13 @@ const MealsDetails = () => {
     return (
 
         <div className='row'>
-            <div className='col-6'>
+            <div className='col-6 col-md-3 col-sm-6  '>
                 <img src={meal.strMealThumb} alt="" className='img__details'/>
                 <h3>{meal.strMeal}</h3>
                 <p><span>Instructions:</span> {meal.strInstructions}</p>
             </div>
 
-            <div className='col-6'>
+            <div className='col-6 col-md-3 col-sm-6 '>
                 <Ingredients ingredients={ingredients} />
                 <Youtube youTube={youTube} />
 

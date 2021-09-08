@@ -16,7 +16,7 @@ const MainIngredient = () => {
     return (
         <div className='container'>
             <div className='row'>
-                <Link className='col-3'>
+                <Link className='col-3 col-md-3 col-sm-6 '>
                     <img src={`https://www.themealdb.com/images/ingredients/${params.name}.png`} alt={params.name}/>
                 </Link>
             </div>
