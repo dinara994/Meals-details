@@ -41,6 +41,10 @@ const MealsDetails = () => {
                 <Ingredients ingredients={ingredients} />
                 <Youtube youTube={youTube} />
             </div>
+            <div className='col-6 col-md-3 col-sm-6 '>
+                <Ingredients ingredients={ingredients} />
+                <Youtube youTube={youTube} />
+            </div>
 
         </div>
 
