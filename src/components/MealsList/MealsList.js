@@ -9,7 +9,7 @@ const MealsList = ({meals}) => {
                     <div className='col-3' key={item.idMeal}>
                         <Link to={`/meal/${item.idMeal}`}>
                             <div className='box'>
-                                <img src={item.strMealThumb} alt=""/>
+                                <img src={item.strMealThumb} alt="" className='img-news'/>
                                 <h3>{item.strMeal}</h3>
                             </div>
                         </Link>
